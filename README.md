@@ -1,6 +1,6 @@
 # Lasting Impressions Management System - User Guide
 
-This guide provides a detailed walkthrough of the features and workflows in the Lasting Impressions Management System.
+This guide provides a detailed walkthrough of the features and workflows in the Lasting Impressions Card System.
 
 ## 1. Getting Started
 
@@ -9,7 +9,7 @@ When you first start the application, you will see the login screen.
 
 1.  **Enter Credentials:** Type your assigned **Username** and **Password** into the text fields.
 2.  **Login:** Click the **"Login"** button. The system will authenticate your credentials.
-    *   *Note:* The first login of the day may take 15-20 seconds as the backend service starts up.
+    *   *Note:* The login may take 15-20 seconds as the backend service starts up.
 3.  **Password Reset:** If you have forgotten your password, click the **"Reset Password"** button. This will open a secure web page where you can follow the instructions to reset your password.
 
 ### 1.2. Automatic Logout and Session Management
@@ -109,4 +109,3 @@ The application is designed to work with Zebra card printers for creating physic
 
 - **Automatic Printing:** After successfully creating a new member or gift card, the application will automatically take you to the **Print Screen**.
 - **Gift Card Designs:** When printing a gift card, you will be shown a selection of available card designs. Click on the design you wish to use, then click the **"Print Selected Design"** button.
-- **Mock Printing:** For testing without a physical printer, an administrator can enable "Print Mocking". This will save a PNG image of what *would* have been printed to your computer's Desktop.
