@@ -4,9 +4,7 @@ This guide provides a detailed walkthrough of the features and workflows in the 
 
 ## Installation Instructions:
 ### Download latest version from: [Here](https://github.com/rsobo/card-system-app-public/releases) 
-1. Open downloads location
-2. Right click zip file and got to properties. Then check the box next to **Unblock**. Then click **Apply**
-3. Run CardSystemUpdater.ps1 by right clicking and selecting "Run with Powershell"
+After downloading double click CardSystemUpdater.bat (found on your desktop)
 
 ## 1. Getting Started
 
