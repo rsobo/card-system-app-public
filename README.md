@@ -1,115 +1,177 @@
-# Lasting Impressions Management System - User Guide
+# Lasting Impressions Card System — Staff User Guide
 
-This guide provides a detailed walkthrough of the features and workflows in the Lasting Impressions Card System.
+---
 
 ## Installation Instructions:
 ### Download latest version from: [Here](https://github.com/rsobo/card-system-app-public/releases) 
 After downloading double click CardSystemUpdater.bat (found on your desktop)
 
-## 1. Getting Started
+## Getting Started
 
-### 1.1. Logging In
-When you first start the application, you will see the login screen.
+### Logging In
+1. Open the application. You will see the login screen.
+2. Type your **Username** and **Password** and click **Login**.
+   - The first login of the day may take 15–20 seconds while the system starts up. This is normal.
+3. If you forgot your password, click **Reset Password**. A web page will open with instructions.
 
-1.  **Enter Credentials:** Type your assigned **Username** and **Password** into the text fields.
-2.  **Login:** Click the **"Login"** button. The system will authenticate your credentials.
-    *   *Note:* The login may take 15-20 seconds as the backend service starts up.
-3.  **Password Reset:** If you have forgotten your password, click the **"Reset Password"** button. This will open a secure web page where you can follow the instructions to reset your password.
+> **After 10 failed login attempts your account will be locked for 5 minutes.** Wait and try again.
 
-### 1.2. Automatic Logout and Session Management
-For your security, the application includes two automatic logout features:
-- **Inactivity Timeout:** If you do not move the mouse or type for **15 minutes**, the application will automatically log you out.
-- **Session Expiration:** Your session is valid for many hours of continuous use. If the session cannot be renewed in the background, you will be logged out.
+### Automatic Logout
+The system logs you out automatically in two situations:
+- **No activity for 15 minutes** — simply move the mouse or type to reset the timer.
+- **Session expires** — if the system cannot renew your session in the background, you will be logged out and will need to log back in.
 
-## 2. The Main Application
+---
 
-### 2.1. Dashboard
-After logging in, you will land on the main **Dashboard**. This screen provides a central welcome point. All application features are accessible from the menu bar at the top of the window.
+## Navigation
 
-### 2.2. Navigation Menu
-The menu bar at the top contains the following sections:
-- **Home:** Returns you to the Dashboard.
-- **Membership:** Contains all tools for managing members.
-- **Gift Card:** Tools for creating and managing gift cards.
-- **Transactions:** Point-of-sale and transaction history tools.
-- **Management:** Tools for managing products and services (Manager/Admin only).
-- **Logout:** Securely logs you out of the application.
+After logging in you will land on the **Home** screen. Use the menu bar at the top to navigate.
 
-## 3. Membership Management
+| Menu | What it does |
+|---|---|
+| **Home** | Returns to the home screen |
+| **Membership** | Create cards, look up members, update profiles |
+| **Gift Card** | Issue new gift cards |
+| **Transactions** | Process sales and (for managers) view history |
+| **Referrals** | Record and search referrals |
+| **Management** | Manage products & services *(Manager/Admin only)* |
+| **Logout** | Securely sign out |
 
-### 3.1. Create New Membership Card
-Use this screen to enroll a new member and issue them a physical card.
+---
 
-1.  **Fill out Details:** Enter the new member's First Name, Last Name, Date of Birth (in MMDDYYYY format), Email, and Phone Number.
-2.  **Set Preferences:** Check the boxes to confirm the member's consent for email/text communications and select their preferred contact method.
-3.  **Scan Card:** Click the **"Scan Member Card"** button. The system will wait for you to place a blank NFC card on the card reader.
-4.  **Create Member:** Once the card is scanned and its serial number appears, click **"Create Member"**.
-5.  **Set Up Subscription:** A web browser will open automatically, directing you to the Clover portal. You **must** complete the subscription setup for the member in the browser.
-6.  **Activate Card:** After setting up the subscription, return to the application. An alert will ask you to place the card on the scanner to activate it. Leave the card on the scanner until you see a "Success" message.
-7.  **Print Card:** The application will automatically navigate to the Print Screen to create the physical membership card. The back of the card will be printed with the member's name, number, and the year they joined.
+## Membership
 
-### 3.2. Membership Status Tracker
-This screen is designed to quickly look up a member's treatment history and billing status.
+### Create New Membership Card
+Use this to enroll a brand-new member and issue them a physical card.
 
-1.  **Find the Member:**
-    *   **By Scanning:** Go to the "Scan Membership Card" tab, place the member's card on the reader, and click **"Scan Card"**.
-    *   **By Searching:** Go to the "Search by Name/Phone" tab, enter the member's First Name and Last Name, or their Phone Number, and click **"Search"**. If multiple results are found, a table will appear allowing you to select the correct member.
-2.  **Review Status:** Once a member is loaded, their information will appear in a clean, organized view.
-    *   The member's name is displayed prominently at the top.
-    *   **Billing Status** is color-coded: **Green** for "Active", **Red** for any other status.
-    *   You can view a list of their most recent **SknLab** treatments, including the date and time of each.
-3.  **Search Again:** To look up another member, click the **"Search for Another Member"** button at the bottom.
+1. Fill in the member's **First Name**, **Last Name**, **Date of Birth** (MMDDYYYY), **Email**, and **Phone Number**.
+2. Check the boxes for the member's communication consent and preferred contact method.
+3. Click **Scan Member Card** and place a blank NFC card on the card reader. The card's serial number will appear on screen.
+4. Click **Create Member**.
+5. A web browser will open to the Clover portal — **complete the subscription setup there before continuing**.
+6. Return to the app. A prompt will ask you to place the card on the reader to activate it. Leave the card on the reader until you see a "Success" message.
+7. The app will take you to the **Print Screen** automatically to print the physical card.
 
-### 3.3. Member Profile (Update)
-Use this screen to update a member's contact information or issue them a replacement card.
+---
 
-1.  **Find the Member:** Use the Scan or Search tabs to load the member's profile.
-2.  **Update Information:** Change the First Name, Last Name, Email, Phone, or Contact Preference as needed. Click **"Save Changes"** to save.
-3.  **Issue a New Card (Lost/Damaged):** If a member needs a new physical card, click **"Scan Blank Card"** and place a new, unassigned card on the reader. This will link the new card to the member's existing account and prepare it for printing.
-4.  **Reprint Existing Card:** If a member's card is fine but the printing has faded, click **"Reprint Member Card"** to go directly to the print screen without changing any card data.
+### Membership Tracker
+Quickly check a member's billing status and recent treatment history.
 
-## 4. Transactions (Point of Sale)
+**Find the member — two ways:**
+- **Scan tab:** Place the member's card on the reader and click **Scan Card**.
+- **Search tab:** Enter the member's first and last name, or their phone number, and click **Search**. If multiple results appear, click the correct one in the list.
 
-### 4.1. New Transaction
-This is the main screen for processing sales of products and services.
+**What you'll see once a member is loaded:**
+- Their name at the top.
+- **Billing Status** — green means Active, red means there is an issue.
+- A list of their recent SknLab treatments with dates and times.
 
-1.  **Select Payment Method:** At the top, check one or more payment methods (e.g., "Credit Card", "Cash").
-    *   If you select **"Gift Card"**, a **"Scan/Search Gift Card"** button will appear. Click it to scan or manually enter a gift card number to check its balance.
-2.  **Attach a Member (Optional but Recommended):**
-    *   Click **"Scan Card"** to associate a member with the transaction by their card.
-    *   Click **"Search"** to open a search dialog and find a member by name or phone.
-    *   Once a member is selected, their name and ID will appear.
-3.  **Add Items to Cart:**
-    *   Use the **"Item"** dropdown to search for and select a product or service.
-    *   **Member Discount (Automatic):** If a member is attached to the transaction and you select a **Product**, the **20% Membership discount** will be automatically applied.
-    *   Adjust the **Quantity** or **Cost Per** item if needed.
-    *   Apply any other manual discounts or price adjustments.
-    *   Click **"Add Item"**. The item will appear in the cart below.
-4.  **Finalize Sale:**
-    *   Review the items in the cart. You can select an item and click **"Remove Selected"** to make changes.
-    *   The total amount is displayed at the bottom.
-    *   Click **"Submit Final Transaction"** to complete the sale.
+Click **Search for Another Member** at the bottom when you're done.
 
-### 4.2. Transaction Log (Manager/Admin Only)
-This screen provides a powerful way to view and export past transactions.
+---
 
-1.  **Filter Transactions:** Use the search fields at the top to filter by patient name, date range, specific products/services, and more.
-2.  **Search:** Click the **"Search"** button to view all transaction line items that match your filters.
-3.  **Export Data:** Click **"Export to CSV/Excel"** to download the currently filtered data as a CSV file, which can be opened in Microsoft Excel or other spreadsheet software. The file will be saved to your Desktop or Downloads folder.
+### Member Profile
+Use this to update a member's information or replace their card.
 
-## 5. Management (Manager/Admin Only)
+1. Find the member using the **Scan** or **Search** tab.
+2. **Update info:** Change name, email, phone, or contact preference and click **Save Changes**.
+3. **Replace a lost or damaged card:** Click **Scan Blank Card** and place a new blank card on the reader. This links the new card to the member's account.
+4. **Reprint a faded card:** Click **Reprint Member Card** to go straight to the print screen without changing any card data.
 
-### 5.1. Manage Products & Services
-This screen allows authorized users to manage the catalog of items available for sale.
+---
 
-1.  **Choose Action:** Select **"Create New"** to add a new item or **"Update Existing"** to modify one.
-2.  **Choose Type:** Select whether the item is a **"Product"** or a **"Service"**.
-3.  **Find Item (for Updates):** If updating, a search box will appear. Start typing the name of the item to find and select it. Its details will fill the form.
-4.  **Enter Details:** Fill out all required fields, such as Name, Price, and Manufacturer.
-5.  **Save:** Click the **"Create/Update"** button at the bottom to save your changes to the system.
+## Gift Cards
 
-## 6. Printing
-The application is designed to work with Zebra card printers for creating physical membership and gift cards.
+### Create New Gift Card
+1. Click **Scan Card** and place a blank NFC card on the reader.
+2. Enter the **Value** (dollar amount), **Purchaser Name**, **Recipient Name**, and **Email**.
+3. Select the **Payment Method** (Credit Card, Cash, or Other).
+4. Click **Create & Write Card**.
+5. When prompted, place the card on the reader to activate it. Leave it there until you see a "Success" message.
+6. The app will take you to the **Print Screen** automatically to select a card design and print.
 
-- **Automatic Printing:** After successfully creating a new member or gift card, the application will automatically take you to the **Print Screen**.
-- **Gift Card Designs:** When printing a gift card, you will be shown a selection of available card designs. Click on the design you wish to use, then click the **"Print Selected Design"** button.
+---
+
+## Transactions
+
+### New Transaction (Point of Sale)
+
+1. **Choose payment method(s)** — check Credit Card, Cash, or both.
+   - If you select **Gift Card**, a **Scan/Search Gift Card** button will appear. Use it to scan or manually enter a gift card number and check its balance.
+
+2. **Attach a member (optional but recommended):**
+   - Click **Scan Card** to scan the member's card, or
+   - Click **Search** to find a member by name or phone number.
+   - The member's name will appear once they are attached.
+
+3. **Add items:**
+   - Select a product or service from the **Item** dropdown.
+   - If a member is attached and you select a **Product**, the **20% membership discount** is applied automatically.
+   - Adjust **Quantity** or **Cost Per** if needed and apply any other discounts.
+   - Click **Add Item**. The item appears in the cart below.
+   - To remove something, select it in the cart and click **Remove Selected**.
+
+4. Review the total at the bottom, then click **Submit Final Transaction** to complete the sale.
+
+---
+
+### Transaction Log *(Manager/Admin only)*
+View and export a history of past transactions.
+
+1. Use the filters at the top to narrow by patient name, date range, product/service, or other fields.
+2. Click **Search** to load the results.
+3. Click **Export to CSV/Excel** to save the results as a spreadsheet file on your Desktop or Downloads folder.
+
+---
+
+## Referrals
+
+### Create a Referral
+Record when a current member refers someone new.
+
+1. Go to **Referrals → Create Referral**.
+2. Enter the **Patient Name** (the new person being referred) and **Referred By** (the member who made the referral).
+3. Click **Create Referral**. A confirmation message will appear.
+
+### Search Referrals
+Look up referral records for a person.
+
+1. Go to **Referrals → Search Referrals**.
+2. Type a name in the search box and click **Search**.
+3. Matching referrals will appear in the table, showing who was referred, who referred them, and when.
+
+---
+
+## Management *(Manager/Admin only)*
+
+### Manage Products & Services
+Add new items to the catalog or update existing ones.
+
+1. Choose **Create New** to add an item or **Update Existing** to change one.
+2. Choose whether it is a **Product** or a **Service**.
+3. If updating, type in the search box to find the item. Its current details will fill the form.
+4. Fill in the name, price, and any other required fields.
+5. Click **Create/Update** to save.
+
+> Price must be between $0.00 and $99,999.99. Name fields are limited to 255 characters.
+
+---
+
+## Printing
+The system prints to the Zebra card printer automatically after creating a new membership card or gift card.
+
+- **Membership cards** print with the member's name, card number, and the year they joined on the back.
+- **Gift cards** — you will be shown a selection of card designs. Click the design you want, then click **Print Selected Design**.
+
+---
+
+## Tips & Troubleshooting
+
+| Situation | What to do |
+|---|---|
+| Login is slow on the first attempt | Wait up to 20 seconds — the system is starting up in the background |
+| Card reader not detecting a card | Remove the card, wait 2 seconds, and place it back flat on the reader |
+| Card write fails on first try | The system will retry once automatically; if it fails again, the record is saved but the physical card is blank — contact your manager |
+| Printer not found | Restart the app; printer discovery runs at startup |
+| Forgot password | Use the **Reset Password** button on the login screen |
+| Account locked | Wait 5 minutes, then try again |
